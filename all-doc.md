@@ -62,4 +62,7 @@ defult a kisu দেওয়া থাকবে আমরা চাইলে আ�
 
 ====================== Connect Atlas system ==========================
 
+1. (https://www.mongodb.com/) ai urla গিয়ে একটা অ্যাকাউন্ট তৈরি করে নিব email and github ba number diye account kore nibo 
+
+2. dashboard Thake Create a cluster 
 
