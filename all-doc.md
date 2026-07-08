@@ -77,6 +77,8 @@ defult a kisu দেওয়া থাকবে আমরা চাইলে আ�
 8. আমরা atlas a kaj korbo na কারন অনেক স্লও থাকে তাই আমরা commpass a kaj korbo 
 9. new data bas create kore nita parbo 
 
+/// ================Database Related Method ===================
+
 
 
 
