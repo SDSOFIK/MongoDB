@@ -64,5 +64,19 @@ defult a kisu দেওয়া থাকবে আমরা চাইলে আ�
 
 1. (https://www.mongodb.com/) ai urla গিয়ে একটা অ্যাকাউন্ট তৈরি করে নিব email and github ba number diye account kore nibo 
 
-2. dashboard Thake Create a cluster 
+2. dashboard Thake Create a cluster akta new cluster add kore nite hobe 
+3.  free ta select kore nobo and name rakhe dibo cluster0 and je kno akta cuntry selet kore nibo and AWS selet kore nobo . 
+4. user name and pasword amra copy kore rakhbo pore kaj a lagbe  user name: sdsofik2002_db_user pasword: vxTstZitGwjiSK8w tarpor closd kore dibo .
+5. আমরা তারপর mongos Compass a connet korbo?  আমরা Connect clik korbo kore user name and password দিয়ে craate Databas user clik kore nibo  click করার por chose to connction method a clik korbo সাথে সাথে  সব গুলা connet option চলে আসবে drive vs code and commpass আমরা যেহেতু commpass a conncet krobo tao commpass select kore nibo 
+
+তারপর নিছে একটা লিঙ্কস পাবো ওইটা কপি করে নিব নিয়ে চলে জাব commpass a 
+
+6. তারপর আমরা একটা নতুন crate করে নিব url oi links ta dibo user name জায়গায় ইউজার নামে থাকবে password er jaygay oi pasword ta dibo তারপর একটা ইউজার নামে দিয়ে অ্যান্ড একটা color select kore নিয়ে save and change kore nibo যদি সব কিছু ঠিক থাকে থলে ওকে না হলে error দিবে 
+
+7. atlas a গিয়ে network access গিয়ে IP Access List a edit a giye all acees diye dibo all ip 
+8. আমরা atlas a kaj korbo na কারন অনেক স্লও থাকে তাই আমরা commpass a kaj korbo 
+9. new data bas create kore nita parbo 
+
+
+
 
