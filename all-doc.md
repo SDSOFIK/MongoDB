@@ -98,6 +98,10 @@ mongodb commet
 >show dbs দিলে আমদের যে যে databas আছে সব দেখতে পাই ।
 >use diye data file er name creare kore nibo collection.
 
+=================  collections drop and create =============================
+
+collections হল যেখানে dataBase সকল ডাটা জমা থাকে 
+
 
 
 
