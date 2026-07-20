@@ -138,4 +138,11 @@ findOne হল একটা ডাটা সধু খুজে দিবে য
 >findOne({name: "Mobile"})
 
 
+========================================Projection =================================
 
+Projection হল কনে একটা databas থেকে কিছু attburite filder করে নেওয়া হল Projection 
+simple বলতে মনে করি একটা ডাটাবেস  এ আছে name price model product Code 
+এখন আমি চাইতেছি সধু নাম র মডেল নিব তাহলে Projection use kora hoy 
+
+> db.products.find({}, {name: 1, model:1})
+{} first সব ডাটা এইখানে জমা হবে পরে ফিলটার করে নিবে যে যে attburite চাই সেইগুলা নাম দিয়ে দিব 
