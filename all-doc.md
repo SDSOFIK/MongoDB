@@ -102,6 +102,28 @@ mongodb commet
 
 collections হল যেখানে dataBase সকল ডাটা জমা থাকে 
 
+> যেই Database collection create করব ওইটা use দিয়ে সিলেক্ট করে নিব 
+>new collections create db.collection name insertOne(যা যা দিব ভালু সেট করে নিব )
+example : db.products.insertOne({name: "jersy", size: "m", price: 12})
 
+ues test diye db.createcollection(collection name) এইভাবে আমরা তৈরি করে নিতে পারি ।
+
+ওইভাবে আমরা ডিলিট  ও করতে পারি 
+>db.products.Drop diye delete kore dite pari .
+
+=============== mongo db  data insert one and many ====================================
+
+insertOne : জেখন আমরা ১ টা ডাটা insert করব তখন আমরা এই comment টা use করব
+
+>Example: db.products.insretOne({naem: "Phone", model: "39pro", price: 122222})
+
+insermany: যেখন আমরা একটা সাথে অনেক গুলা ডাটা insert করব তখন আমরা এই comment ta use করব 
+
+>Example: db.products.insertMany([
+{name: "Mobile" , price:123, Brand: apple, model: "Z20"},
+{name: "Mobile" , price:123, Brand: apple, model: "Z20"},
+{name: "Mobile" , price:123, Brand: apple, model: "Z20"},
+{name: "Mobile" , price:123, Brand: apple, model: "Z20"},
+])
 
 
