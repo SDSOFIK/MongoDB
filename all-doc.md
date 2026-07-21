@@ -179,3 +179,21 @@ acknowledged: true,
   modifiedCount: 4, যদি  update হয়ে থলে কয়টা update হইছে সেই টা আসবে ।
   upsertedCount: 0
  
+=============== update operator =========================
+
+>$set:   হল আমরা যদি কন ডাটা update korte চাই  আগের পরিবতন করে যেই ভালু টা দিব $set:{price: 200} পরিবতন করে সেই টা দিব সজা ভাবে বলতে নতুন ভালু সেট করা বা নতুন ফিল্ট যোগ করা 
+> $inc : হল কোন নাম্বার inc dnc কারর কাজ 
+Example: 
+db.products.updateMany({name: "Mobile"}, {$inc: {stock:1}}) যদি ১ দেই তাহলে ১ করে বারবে যদি ২ দেই ২ করে সব বারবে 
+> $unset: যদি কোন ফিলট আমরা ডিলিট করে দিতা চাই থলে আমরা unset use করব 
+Example : 
+
+db.products.updateMany({name: Mobile}, {$unset: {stock:""}}) Stock fild ta delete hoye jabe 
+
+>$rename: যদি কোন attribute নামে পরিবতন করতে চাই তাহলে এই টা তাহলে আমরা এইটা উএস করি 
+for Example 
+
+db,porducts.updateMany({name: "Mobile"}, {$rename:{model:"Model"}})
+
+
+
