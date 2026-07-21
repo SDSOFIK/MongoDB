@@ -146,3 +146,36 @@ simple বলতে মনে করি একটা ডাটাবেস  এ 
 
 > db.products.find({}, {name: 1, model:1})
 {} first সব ডাটা এইখানে জমা হবে পরে ফিলটার করে নিবে যে যে attburite চাই সেইগুলা নাম দিয়ে দিব 
+
+============== update on and update many ==============================
+
+
+> UpdateOne() আমরা  একটা ডাটা সধু upadete করতে চাই তাহলে আমরা এই টা use করবো 
+Example 
+
+`updateOne(
+{name:jersy}  এইটা দিয়ে আমরা খুজে বের করব যে ডাটা টা কি 
+{$set:{price: 600}} set method দিয়ে আমরা যে যে ডাটা update করব সেই গুলা attribute and value set করে দিব 
+)`
+acknowledged: true,
+  insertedId: null,
+  matchedCount: 1, 
+  modifiedCount: 1, যদি 1 আসে তাহলে ঠিক আছে যদি না আসে তাহলে ঠিক নাই 
+  upsertedCount: 0
+
+
+>updateMany() যদি আমরা এক সাথে একাধিক ডাটা update করতে চাই তাহলে UpdateMany use করি 
+
+Example:
+
+updateMany(
+{name: mobile},  আমরা এই নাম দিতে খুজে নিয়ে আসব 
+{$set : {model: 23 pro}} যে যে ডাটা পরিবতন করব সেই গুলা দিব 
+)
+
+acknowledged: true,
+  insertedId: null,
+  matchedCount: 4,
+  modifiedCount: 4, যদি  update হয়ে থলে কয়টা update হইছে সেই টা আসবে ।
+  upsertedCount: 0
+ 
