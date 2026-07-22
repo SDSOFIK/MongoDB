@@ -196,4 +196,16 @@ for Example
 db,porducts.updateMany({name: "Mobile"}, {$rename:{model:"Model"}})
 
 
+==================== Delete One and May ===========================
+
+>DeleteOne() যদি কোন ডাটা ১ মাত্র ডাটা ডিলিট করাতে চাই তাহলে আমরা DeleteOne() Use korbo ?
+
+Example: db.products.DeleteOne(P{name:Mobile}) এইখানে নাম মোবাইল আছে খুজে প্রথম টা ডিলিট করে দিবে 
+
+>DeleteMany() হলে সর্ত সাথে যা যা মিলবে সব গুলা ডিলিট করে দিবে 
+
+Example: db.products.deleteMany({name:"Mobile:}) aikne mobile name jeto gula ace sob delete kore dibe 
+
+
+
 
