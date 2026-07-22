@@ -207,5 +207,11 @@ Example: db.products.DeleteOne(P{name:Mobile}) এইখানে নাম ম�
 Example: db.products.deleteMany({name:"Mobile:}) aikne mobile name jeto gula ace sob delete kore dibe 
 
 
+================== replace ==========================
+>replaceOne() হল কন ডাটা যা যা প্রপাটি আছে সব কিছু নতুন করে দেওয়া  update kore daoye 
+Example:  replaceOne({name: jersy},
 
+{name: "Brazil Jersy",
+price: 900,
+size: M, L, X, })
 
