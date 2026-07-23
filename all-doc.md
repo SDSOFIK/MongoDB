@@ -291,4 +291,13 @@ db.products.find({
 })
 
 
+==================Element Operator ======================
+>Exists() কোন ফিল্ট আছে কি না টা চেক করে 
+
+example: 
+
+db.products.find({price:{$exists:true}})
+
+>$type() kon type filt ta check kora 
+
 
