@@ -217,6 +217,8 @@ size: M, L, X, })
 
 ================================     qurey operator in mongoDB ===================================
 
+================= Comparison operator =====================
+
 Comparison operator হল যে তুলানা করে বড় না ছোট বা সমান 
 
 >$eq()  = সমান বা equal 
@@ -249,6 +251,44 @@ db.products.find({price:{in:"s"}}) size যে যে s আছে সধু ও�
 >nin() oi string গুলা বাদে অন্য গুলা আসবে 
 Example :  
 db.products.find({size:{nin:"s", "m"}});
+
+
+========================= logical operator =========================== 
+
+>and() সব condition true হতে হবে
+Example: 
+
+db.products.find({
+  $and: [
+    { price: { $gt: 100 } },
+    { size: "m" }
+  ]
+}) price 100 upre hoite hobe and size m hole then oigula dakhbe 
+
+>Or()  যেকোনো একটি condition true হলেই হবে
+
+db.products.find({
+  $or: [
+    { size: "m" },
+    { size: "l" }
+  ]
+})
+
+>$not() যে condition dibe tar ulta condition-এর উল্টো
+db.products.find({
+  price: {
+    $not: { $gt: 100 }
+  }
+})
+
+>$nor() কোনো condition-ই true হওয়া যাবে না
+
+db.products.find({
+  $nor: [
+    { size: "m" },
+    { price: { $gt: 100 } }
+  ]
+})
 
 
 
